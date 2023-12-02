@@ -24,9 +24,11 @@
             max-width: 600px;
             margin: 0 auto;
         }
-
         hr {
             width: 100%;
+            border: none; /* Remove default border */
+            height: 2px; /* Set the height/thickness */
+            background-color: #FFFFFF; /* Change the color if needed */
             margin: 10px 0;
         }
         .projects-container {
@@ -70,6 +72,19 @@
         /* Define a different color when hovering over links */
         a:hover {
             color: #71adcf; /* Set color for hover */
+        }
+        .project img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+            border: 1px solid #FFFFFF; /* Adjust border properties as needed */
+        }
+        button {
+            color: #FFFFFF; /* White text color */
+            background-color: #000000; /* Black fill */
+            border: 2px solid #FFFFFF; /* White border */
+            padding: 8px 16px; /* Adjust padding as needed */
+            border-radius: 5px; /* Rounded corners */
         }
     </style>
 </head>
