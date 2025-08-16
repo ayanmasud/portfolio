@@ -1,165 +1,123 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Ayan Masud</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <style>
-        body {
-            background-image: url('background.png');
-            background-size: cover;
-            color: #FFFFFF;
-            font-family: 'Montserrat', sans-serif;
-            margin: 1;
-            padding: 0;
-        }
-
-        h1, h3, p, button {
-            font-family: 'Montserrat', sans-serif;
-        }
-
-        .portfolio-content {
-            text-align: center;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-        hr {
-            width: 100%;
-            border: none; /* Remove default border */
-            height: 2px; /* Set the height/thickness */
-            background-color: #FFFFFF; /* Change the color if needed */
-            margin: 10px 0;
-        }
-        .projects-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjust the minimum and maximum width of grid items */
-            gap: 20px; /* Adjust the gap between grid items */
-            max-width: 1200px; /* Maximum width of the grid */
-            padding: 20px;
-            margin: 0 auto;
-        }
-
-        .project {
-            border: 2px solid #FFFFFF;
-            padding: 20px;
-            text-align: center;
-        }
-
-        .project img {
-            max-width: 100%;
-            height: auto;
-            margin-bottom: 10px;
-        }
-        .bottom-left-text {
-            position: fixed;
-            bottom: 10px;
-            left: 10px;
-            text-align: left;
-            line-height: 0.01;
-            opacity: 0.6;
-            color: #71adcf;
-        }
-        a {
-            color: #71adcf; /* Set the color you want */
-        }
-
-        /* Define a different color for visited links */
-        a:visited {
-            color: #517d96; /* Set color for visited links */
-        }
-
-        /* Define a different color when hovering over links */
-        a:hover {
-            color: #71adcf; /* Set color for hover */
-        }
-        .project img {
-            max-width: 100%;
-            height: auto;
-            margin-bottom: 10px;
-            border: 2px solid #FFFFFF; /* Adjust border properties as needed */
-        }
-        button {
-            color: #FFFFFF; /* White text color */
-            background-color: #000000; /* Black fill */
-            border: 2px solid #FFFFFF; /* White border */
-            padding: 8px 16px; /* Adjust padding as needed */
-            border-radius: 5px; /* Rounded corners */
-        }
-        .project h3 {
-            color: #71adcf;
-            text-decoration: none;
-            cursor: default; /* Set the cursor to default to remove link interaction */
-        }
-    </style>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ayan Masud — Games</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-    <h3>Ayan Masud
-        <span style="float:right;">
-            <a href="index.html"><button style="border-radius:5px">Home</button></a>
-            <a href="drawings.html"><button style="border-radius:5px">Drawings</button></a>
-            <a href="models.html"><button style="border-radius:5px">3D Models</button></a>
-            <a href="games.html"><button style="border-radius:5px">Games</button></a>
-        </span>
-    </h3>
-    <div class="portfolio-content">
-        <h1>Games</h1>
-        <hr>
-		<br><p>I made several games using tutorials on unity which I no longer have because it was back in 2018. Thats were my programming sort of started</p><br><br>
+  <nav>
+    <div class="nav-inner">
+      <div class="brand"><span class="accent">Ayan</span> Masud</div>
+      <div class="links">
+        <a href="index.html">Home</a>
+        <a href="drawings.html">Drawings</a>
+        <a href="models.html">3D Models</a>
+        <a href="games.html" aria-current="page">Games</a>
+      </div>
     </div>
-    <div class="projects-container">
-        <div class="project">
-            <h3>Pay Attention</h3>
-            <img src="img/games1.png" alt="Project 1 Image">
-            <p>
-                A circle follows your cursor and you are trying to get the circle to the end. The circle is unable to touch walls nor the cursor otherwise the circle resets. The game has a total of 8 levels.
-                <br><br>download app: <a href="https://drive.google.com/file/d/1UpnDwL-3t5_Ff5QxafSmMLohEUJuIEF_/view?usp=sharing" target="_blank">link</a>
-            </p>
+  </nav>
+
+  <div class="wrapper">
+    <h1 class="page-title">Games</h1>
+    <p class="subtitle">
+      Back in 2018, I attended a Unity game development workshop provided by Eilman Karim and Faizan Karim. I no longer have the games from back then because it was so long ago. Thats were my programming sort of started.
+    </p>
+
+    <hr class="sep"/>
+
+    <div class="lines">
+      <div class="line">
+        <div class="media"><img src="img/games1.png" alt="Pay Attention game"/></div>
+        <div class="content">
+          <h3>Pay Attention</h3>
+          <p>
+            Guide a circle to the goal. If it touches walls or your cursor, it resets. 8 levels.
+            <br/><br/>
+            Download: <a href="https://drive.google.com/file/d/1UpnDwL-3t5_Ff5QxafSmMLohEUJuIEF_/view?usp=sharing" target="_blank" rel="noopener">link</a>
+          </p>
         </div>
-        <div class="project">
-            <h3>Connect 4</h3>
-            <img src="img/games2.png" alt="Project 1 Image">
-            <p>
-                Made connect 4 in python.
-                <br><br>github: <a href="https://github.com/ayanmasud/Connect4" target="_blank">link</a>
-            </p>
+      </div>
+
+      <hr class="sep"/>
+
+      <div class="line">
+        <div class="content">
+          <h3>Connect 4</h3>
+          <p>
+            A Python Connect 4 implementation.
+            <br/><br/>
+            GitHub: <a href="https://github.com/ayanmasud/Connect4" target="_blank" rel="noopener">link</a>
+          </p>
         </div>
-        <div class="project">
-            <h3>Lingdalong</h3>
-            <img src="img/games3.png" alt="Project 1 Image">
-            <p>
-                Unfinished game. The game is about a girl attempting to get her grandmothers stolen fried rice recipe back from a dude who wants to use the recipe to make money. The game was created alongside Anish Rao, Adithya Chetty and Riddhiman Chowdhury. The game went unfinished due to a lack of motivation to continue. 12/21/22 - 8/14/23.
-                <br><br>Link to github repository: <a href="https://github.com/Anish-Dotcom/Lingdalong" target="_blank">link</a>
-                <br><br>Download app: <a href="https://drive.google.com/file/d/1CVb77R8HAXzhofR2-FtjphZnb-icS6Az/view?usp=sharing" target="_blank">link</a>
-            </p>
+        <div class="media"><img src="img/games2.png" alt="Connect 4 screenshot"/></div>
+      </div>
+
+      <hr class="sep"/>
+
+      <div class="line">
+        <div class="media"><img src="img/games3.png" alt="Lingdalong screenshot"/></div>
+        <div class="content">
+          <h3>Lingdalong</h3>
+          <p>
+            12/21/22 - 8/14/23<br>Unfinished game. The game is about a girl attempting to get her grandmothers stolen fried rice recipe back from a dude who wants to use the recipe to make money. The game was created alongside Anish Rao, Adithya Chetty and Riddhiman Chowdhury. The game went unfinished due to a lack of motivation to continue.
+            <br/><br/>
+            GitHub: <a href="https://github.com/Anish-Dotcom/Lingdalong" target="_blank" rel="noopener">link</a><br/>
+            Download: <a href="https://drive.google.com/file/d/1CVb77R8HAXzhofR2-FtjphZnb-icS6Az/view?usp=sharing" target="_blank" rel="noopener">link</a>
+          </p>
         </div>
-        <div class="project">
-            <h3>Congressional App Challenge 2023</h3>
-            <img src="img/games4.png" alt="Project 1 Image">
-            <p>
-                Weekday ruler is a game that was created with Brady Rozendaal and Anish Rao. The game is about you being a ruler for a weekday (stamping and denying laws) and if you're not re-elected by your country's people, you lose. 9/19/23-10/29/23
-                <br><br>github: <a href="https://github.com/Anish-Dotcom/CongressGame" target="_blank">link</a>
-                <br><br>play on web link: <a href="https://ayanmasud.github.io/Weekday-Ruler/" target="_blank">link</a>
-                <br><br>download app: <a href="https://drive.google.com/file/d/1FSaC6-o81AlzC_zWeDi3ap7uiuIgxXNb/view?usp=sharing" target="_blank">link</a>
-            </p>
+      </div>
+
+      <hr class="sep"/>
+
+      <div class="line">
+        <div class="content">
+          <h3>Congressional App Challenge 2023 — Weekday Ruler</h3>
+          <p>
+            9/19/23 - 10/29/23<br>Weekday ruler is a game that was created with Brady Rozendaal and Anish Rao. The game is about you being a ruler for a weekday (stamping and denying laws) and if you're not re-elected by your country's people, you lose.
+            <br/><br/>
+            GitHub: <a href="https://github.com/Anish-Dotcom/CongressGame" target="_blank" rel="noopener">link</a><br/>
+            Play on web: <a href="https://ayanmasud.github.io/Weekday-Ruler/" target="_blank" rel="noopener">link</a><br/>
+            Download: <a href="https://drive.google.com/file/d/1FSaC6-o81AlzC_zWeDi3ap7uiuIgxXNb/view?usp=sharing" target="_blank" rel="noopener">link</a>
+          </p>
         </div>
-        <div class="project">
-            <h3>Oregon Game Project Challenge 2024</h3>
-            <img src="img/games5.png" alt="Project 1 Image">
-            <p>
-                Perpetual Motion was created with Brady Rozendaal, Anish Rao, and Collin Wittmayer. It is an artistic puzzle game set in a toy shop during the early 1900s. The shop owner is always hard at work, deciding which toy parts to order and meticulously assembling them to craft new toys for their customers. Experience the relentless pressure of meeting the bare minimum in a capitalistic society. How many weeks can you go?. 11/4/23-5/18/24
-                <br><br>github: <a href="https://github.com/Anish-Dotcom/OgpcGameSeason17" target="_blank">link</a>
-                <br><br>Trailer video: <a href="https://www.youtube.com/watch?v=7FRaqo0fS5o&t=5s" target="_blank">link</a>
-            </p>
+        <div class="media"><img src="img/games4.png" alt="Weekday Ruler screenshot"/></div>
+      </div>
+
+      <hr class="sep"/>
+
+      <div class="line">
+        <div class="media"><img src="img/games5.png" alt="OGPC 2024 game screenshot"/></div>
+        <div class="content">
+          <h3>Oregon Game Project Challenge 2024 — Perpetual Motion</h3>
+          <p>
+             11/4/23 - 5/18/24<br>Perpetual Motion was created with Brady Rozendaal, Anish Rao, and Collin Wittmayer. It is an artistic puzzle game set in a toy shop during the early 1900s. The shop owner is always hard at work, deciding which toy parts to order and meticulously assembling them to craft new toys for their customers. Experience the relentless pressure of meeting the bare minimum in a capitalistic society. How many weeks can you go?
+            <br/><br/>
+            GitHub: <a href="https://github.com/Anish-Dotcom/OgpcGameSeason17" target="_blank" rel="noopener">link</a><br/>
+            Trailer: <a href="https://www.youtube.com/watch?v=7FRaqo0fS5o&t=5s" target="_blank" rel="noopener">link</a>
+          </p>
         </div>
-	<div class="project">
-            <h3>Code Ninjas Sensei Game Jam 2025</h3>
-            <img src="img/games6.png" alt="Project 1 Image">
-            <p>
-                The theme for this game jam was "Polar Opposites." This is a two player puzzle game where the players are trying to reach their goal without touching the opposite color. 3/28/25
-                <br><br>play on web link: <a href="https://ayanmasud.github.io/Beyond-Tenebrism/" target="_blank">link</a>
-            </p>
+      </div>
+
+      <hr class="sep"/>
+
+      <div class="line">
+        <div class="content">
+          <h3>Code Ninjas Sensei Game Jam 2025 — Beyond Tenebrism</h3>
+          <p>
+            3/28/25<br>The theme for this game jam was "Polar Opposites." This is a two player puzzle game where the players are trying to reach their goal without touching the opposite color.
+            <br/><br/>
+            Play on web: <a href="https://ayanmasud.github.io/Beyond-Tenebrism/" target="_blank" rel="noopener">link</a><br/>
+          </p>
         </div>
+        <div class="media"><img src="img/games6.png" alt=""/></div>
+      </div>
     </div>
+
+    <div class="footer">Games — thanks for playing/reading!</div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>

@@ -1,115 +1,68 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Ayan Masud</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-    <style>
-        body {
-            background-image: url('background.png');
-            background-size: cover;
-            color: #FFFFFF;
-            font-family: 'Montserrat', sans-serif;
-            margin: 1;
-            padding: 0;
-        }
-
-        h1, h3, p, button {
-            font-family: 'Montserrat', sans-serif;
-        }
-
-        .portfolio-content {
-            text-align: center;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-        hr {
-            width: 100%;
-            border: none; /* Remove default border */
-            height: 2px; /* Set the height/thickness */
-            background-color: #FFFFFF; /* Change the color if needed */
-            margin: 10px 0;
-        }
-        .projects-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjust the minimum and maximum width of grid items */
-            gap: 20px; /* Adjust the gap between grid items */
-            max-width: 1200px; /* Maximum width of the grid */
-            padding: 20px;
-            margin: 0 auto;
-        }
-
-        .project {
-            border: 1px solid #FFFFFF;
-            padding: 20px;
-            text-align: center;
-        }
-
-        .project img {
-            max-width: 100%;
-            height: auto;
-            margin-bottom: 10px;
-        }
-        .bottom-left-text {
-            position: fixed;
-            bottom: 10px;
-            left: 10px;
-            text-align: left;
-            line-height: 0.01;
-            opacity: 0.6;
-            color: #71adcf;
-        }
-        a {
-            color: #71adcf; /* Set the color you want */
-        }
-
-        /* Define a different color for visited links */
-        a:visited {
-            color: #517d96; /* Set color for visited links */
-        }
-
-        /* Define a different color when hovering over links */
-        a:hover {
-            color: #71adcf; /* Set color for hover */
-        }
-        .project img {
-            max-width: 100%;
-            height: auto;
-            margin-bottom: 10px;
-            border: 1px solid #FFFFFF; /* Adjust border properties as needed */
-        }
-        button {
-            color: #FFFFFF; /* White text color */
-            background-color: #000000; /* Black fill */
-            border: 2px solid #FFFFFF; /* White border */
-            padding: 8px 16px; /* Adjust padding as needed */
-            border-radius: 5px; /* Rounded corners */
-        }
-    </style>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ayan Masud — Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-    <h3>Ayan Masud
-        <span style="float:right;">
-            <a href="index.html"><button style="border-radius:5px">Home</button></a>
-            <a href="drawings.html"><button style="border-radius:5px">Drawings</button></a>
-            <a href="models.html"><button style="border-radius:5px">3D Models</button></a>
-            <a href="games.html"><button style="border-radius:5px">Games</button></a>
-        </span>
-    </h3>
-    <div class="portfolio-content">
-        <h1>Welcome</h1>
-        <hr>
-        <br><p>I was bored one day and decided to make a portfolio. Enjoy looking around!</p><br><br>
-        <p>Email:<br> ayanmasud2009@gmail.com</p>
-        <p>Discord:<br> ayuwn</p>
-	<p>LinkedIn:<br> <a href="https://www.linkedin.com/in/ayan-masud-518b6b293/" target="_blank">https://www.linkedin.com/in/ayan-masud-518b6b293/</a></p>
-        <p>Instagram:<br> <a href="https://www.instagram.com/ayuuuuwn/" target="_blank">https://www.instagram.com/ayuuuuwn/</a></p>
-        <p>Github:<br> <a href="https://github.com/ayanmasud" target="_blank">https://github.com/ayanmasud</a></p>
+  <nav>
+    <div class="nav-inner">
+      <div class="brand"><span class="accent">Ayan</span> Masud</div>
+      <div class="links">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="drawings.html">Drawings</a>
+        <a href="models.html">3D Models</a>
+        <a href="games.html">Games</a>
+      </div>
     </div>
-    <div class="bottom-left-text">
-        <h6>Webside created: 12/2/23</h6>
-	<h6>Last updated: 5/21/25</h6>
+  </nav>
+
+  <div class="wrapper">
+    <h1 class="page-title">Welcome</h1>
+    <p class="intro">
+      I was bored one day and decided to make a portfolio. Enjoy looking around!
+      <br/><br/>
+      <strong>Email:</strong> ayanmasud2009@gmail.com &nbsp;•&nbsp; <strong>Discord:</strong> ayuwn<br/>
+      <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/ayan-masud-518b6b293/" target="_blank" rel="noopener">https://www.linkedin.com/in/ayan-masud-518b6b293/</a><br/>
+      <strong>Instagram:</strong> <a href="https://www.instagram.com/ayuuuuwn/" target="_blank" rel="noopener">https://www.instagram.com/ayuuuuwn/</a><br/>
+      <strong>GitHub:</strong> <a href="https://github.com/ayanmasud" target="_blank" rel="noopener">https://github.com/ayanmasud</a>
+    </p>
+
+    <hr class="sep"/>
+
+    <div class="lines">
+      <!-- Drawings -->
+      <a class="line link-card" href="drawings.html" aria-label="Go to Drawings">
+        <div class="content">
+          <h3>Drawings</h3>
+          <p>Digital art, posters, school projects, textures, and game artwork.</p>
+        </div>
+      </a>
+
+      <!-- 3D Models -->
+      <a class="line link-card" href="models.html" aria-label="Go to 3D Models">
+        <div class="content">
+          <h3>3D Models</h3>
+          <p>Props, characters, real-world shells for projects, game models, and science fair builds.</p>
+        </div>
+      </a>
+
+      <!-- Games -->
+      <a class="line link-card" href="games.html" aria-label="Go to Games">
+        <div class="content">
+          <h3>Games</h3>
+          <p>Unity & Python games, jams with friends, and competition entries.</p>
+        </div>
+      </a>
     </div>
+
+    <div class="footer">
+      Website created: 12/2/23 — Reworked: 8/15/25 — Last updated: 8/15/25
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
